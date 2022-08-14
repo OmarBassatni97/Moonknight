@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MoonKnight</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="bi bi-arrow-up"></i>
+</button>
+    <header>
+      <a href="" class="logo">moonknight</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#donate">Donate</a></li>
+      </ul>
+    </header>
+    <section class="banner">
+      <img src="images/stars.png" alt="" id="stars" />
+      <img src="images/moon.png" id="moon" alt="" />
+      <img src="images/mountains_behind.png" id="mountains_behind" alt="" />
+      <h2 id="text">Moon Knight</h2>
+      <a href="#about" id="btn">Explore</a>
+      <img src="images/mountains_front.png" id="mountains_front" alt="" />
+    </section>
+    <section class="about" id="about">
+      <h2>About</h2>
+      <div class="about-info">
+        <img src="images/moonknight-about.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+          corrupti animi totam magni voluptate aspernatur obcaecati, quidem
+          voluptates error iure! Dicta amet nisi eius. Enim placeat est nesciunt
+          molestiae commodi, iusto eius distinctio itaque neque quia eos dolorem
+          cumque delectus corporis voluptate et ullam laboriosam magnam. Labore
+          quos totam aperiam beatae, aspernatur similique, illum, error rem illo
+          amet dolores reiciendis quidem quis tenetur? Dolorem, natus fugit
+          deserunt sequi reprehenderit dignissimos molestias ratione ullam
+          sapiente fuga rerum placeat non officiis autem quod possimus aliquid
+          quos doloribus magnam ea labore suscipit. Aliquid facere recusandae
+          eius omnis culpa! Placeat sint accusantium in iste!
+        </p>
+      </div>
+    </section>
+    <section class="cards-section" id="cards">
+      <h2>Cards</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/moonknightcard1.jpg" alt="" />
+          <div class="card-info">
+            <h3>MooinKnight</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              et!
+            </p>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/moonknightcard2.jpg" alt="" />
+          <div class="card-info">
+            <h3>MooinKnight</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              et!
+            </p>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/moonknightcard3.jpg" alt="" />
+          <div class="card-info">
+            <h3>MooinKnight</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              et!
+            </p>
+            <button>Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="donate" id="donate">
+        <h2>Donate to MoonKnight</h2>
+        <div class="buttons">
+            <button class="p-button" value="1" id="onep">$1</button>
+            <button class="p-button" value="2" id="twop">$2</button>
+            <button class="p-button" value="5" id="fifep">$5</button>
+            <button class="p-button" value="10" id="tenp">$10</button>
+            <button class="p-button" value="50" id="fiftyp">$50</button>
+          </div>
+          <p>Total of <div id="donate-amount">0</div> has been donated to Moonknight... Thankyou</p>
+
+    </section>
+    <footer>
+        <div class="rights"><h3>MOONKNIGHT</h3> <p>All rights reserved</p></div>
+        <div class="footer-middle"><a href="#">Shows</a><a href="#">Tickets</a><a href="#">Acion Figures</a></div>
+        <div class="socials"><i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>

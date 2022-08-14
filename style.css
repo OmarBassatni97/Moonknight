@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(#2b1055, #7597de);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 30px 100px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2em;
+  text-decoration: none;
+}
+header ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background-color: white;
+  color: #2b1055;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.banner img#moon {
+  mix-blend-mode: screen;
+}
+.banner img#mountains_front {
+  z-index: 10;
+}
+#text {
+  position: absolute;
+  right: -350px;
+  color: white;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 40px;
+  padding: 8px 30px;
+  background: white;
+  color: #2b1055;
+  background: white;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+}
+.about {
+  background: #1c0522;
+  padding: 100px;
+  position: relative;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+.about-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-info img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+.about h2 {
+  color: white;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+.about p {
+  color: white;
+  font-size: 1.2em;
+}
+.cards-section {
+  background: #1c0522;
+  padding: 100px;
+}
+
+.cards-section h2 {
+  color: white;
+  font-size: 3.5em;
+  margin-bottom: 30px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card-info {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.card {
+  width: 80%;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: white;
+  background-color: hsla(0, 100%, 100%, 0.05);
+  box-shadow:
+		/* offset-x | offset-y | blur-radius | spread-radius | color */ 0px
+      1px 1px 0px hsla(0, 0%, 0%, 0.14),
+    0px 2px 1px -1px hsla(0, 0%, 0%, 0.12), 0px 1px 3px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.card img {
+  width: 100%;
+}
+.card-info button {
+  text-decoration: none;
+  border-radius: 50px;
+  background: white;
+  color: #1c0522;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+.donate {
+  padding: 100px;
+  text-align: center;
+  background: #1c0522;
+  color: white;
+}
+.donate h2 {
+  font-size: 3.5em;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+.p-button {
+  padding: 20px 50px;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.donate p {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+footer {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  background: #2b1055;
+  color: white;
+}
+
+.footer-middle a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+}
+.footer-middle a:hover{
+    background: white;
+    color: #2b1055;
+    border-radius: 50px;
+    padding: 5px;
+}
+.socials i {
+  margin: 20px;
+  font-size: 20px;
+  cursor:pointer;
+}
+.rights {
+  display: flex;
+  gap: 10px;
+  letter-spacing: 1px;
+  align-items: center;
+}
+.rights h3{
+    font-size: 2em;
+}
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+  }
